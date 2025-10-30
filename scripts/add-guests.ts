@@ -15,7 +15,8 @@ import { adminDb } from '../lib/firebase/adminApp';
 
 // Define your guest list here
 const guests = [
-  { name: 'terd', code: 'WEDDING1' },
+  { name: 'eifer', code: 'random' },
+
   
   // Add more guests here...
 ];
