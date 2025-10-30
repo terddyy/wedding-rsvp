@@ -129,10 +129,10 @@ export default function RSVPPage() {
               <p className="text-sm text-gray-500">
                 Please check your invitation or contact us at{' '}
                 <a
-                  href="mailto:wedding@sarahandmichael.com"
+                  href="mailto:terddy03@gmail.com"
                   className="text-primary-600 hover:text-primary-700 font-medium"
                 >
-                  wedding@sarahandmichael.com
+                  terddy03@gmail.com
                 </a>
               </p>
             </div>

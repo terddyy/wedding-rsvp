@@ -22,13 +22,13 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     },
     ref
   ) => {
-    const baseStyles = 'font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed';
+    const baseStyles = 'font-body font-medium rounded-full transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed bloom';
     
     const variants = {
-      primary: 'bg-primary-600 text-white hover:bg-primary-700 focus:ring-primary-500 shadow-md hover:shadow-lg',
-      secondary: 'bg-secondary-600 text-white hover:bg-secondary-700 focus:ring-secondary-500 shadow-md hover:shadow-lg',
-      outline: 'border-2 border-primary-600 text-primary-600 hover:bg-primary-50 focus:ring-primary-500',
-      ghost: 'text-primary-600 hover:bg-primary-50 focus:ring-primary-500',
+      primary: 'bg-coral-400 text-white hover:bg-gold-400 focus:ring-coral-300 shadow-floral hover:shadow-xl border-2 border-coral-400 hover:border-gold-400',
+      secondary: 'bg-sage-400 text-white hover:bg-sage-500 focus:ring-sage-300 shadow-soft hover:shadow-floral',
+      outline: 'border-2 border-coral-400 text-coral-500 hover:bg-coral-50 hover:border-gold-400 hover:text-gold-600 focus:ring-coral-300',
+      ghost: 'text-sage-600 hover:bg-sage-50 hover:text-sage-700 focus:ring-sage-300',
     };
     
     const sizes = {

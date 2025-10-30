@@ -4,12 +4,12 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
 export const metadata: Metadata = {
-  title: 'Sarah & Michael | Wedding',
+  title: 'Jheifer | Wedding',
   description: 'Join us as we celebrate our wedding day',
-  keywords: ['wedding', 'Sarah', 'Michael', 'RSVP'],
-  authors: [{ name: 'Sarah & Michael' }],
+  keywords: ['wedding', 'Jhe', 'Eifer', 'RSVP'],
+  authors: [{ name: 'Jerome & Jennifer' }],
   openGraph: {
-    title: 'Sarah & Michael | Wedding',
+    title: 'Jheifer | Wedding',
     description: 'Join us as we celebrate our wedding day',
     type: 'website',
   },

@@ -190,10 +190,10 @@ export default function RSVPFormPage() {
               If you need to update your RSVP after submitting, please contact us directly.
             </p>
             <a
-              href="mailto:wedding@sarahandmichael.com"
+              href="mailto:terddy03@gmail.com"
               className="text-primary-600 hover:text-primary-700 font-medium"
             >
-              wedding@sarahandmichael.com
+              terddy03@gmail.com
             </a>
           </div>
         </motion.div>

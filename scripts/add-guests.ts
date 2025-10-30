@@ -4,11 +4,10 @@
  * Usage:
  * 1. Update the guests array below with your guest list
  * 2. Run: npx tsx scripts/add-guests.ts
+ * 
+ * Note: This script only runs locally. Next.js automatically loads
+ * environment variables from .env.local, so no dotenv needed for the app.
  */
-
-// Load environment variables
-import { config } from 'dotenv';
-config({ path: '.env.local' });
 
 import { hashCode } from '../lib/utils';
 import { adminDb } from '../lib/firebase/adminApp';

@@ -1,6 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { adminDb } from '@/lib/firebase/adminApp';
 
+export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
+
 // Helper function to verify admin password
 function verifyAdminAuth(request: NextRequest): boolean {
   const authHeader = request.headers.get('authorization');

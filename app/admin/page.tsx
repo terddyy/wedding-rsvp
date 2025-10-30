@@ -31,21 +31,26 @@ export default function AdminDashboard() {
   const handleLogin = () => {
     if (password === ADMIN_PASSWORD) {
       setIsAuthenticated(true);
-      localStorage.setItem('adminAuth', 'true');
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('adminAuth', 'true');
+      }
+      fetchGuests();
     } else {
       alert('Incorrect password!');
     }
   };
 
   useEffect(() => {
-    // Check if already authenticated
-    const isAuth = localStorage.getItem('adminAuth') === 'true';
-    setIsAuthenticated(isAuth);
+    // Check if already authenticated (only on client side)
+    if (typeof window !== 'undefined') {
+      const isAuth = localStorage.getItem('adminAuth') === 'true';
+      setIsAuthenticated(isAuth);
 
-    if (isAuth) {
-      fetchGuests();
+      if (isAuth) {
+        fetchGuests();
+      }
     }
-  }, [isAuthenticated]);
+  }, []);
 
   const fetchGuests = async () => {
     try {
@@ -90,7 +95,9 @@ export default function AdminDashboard() {
 
   const handleLogout = () => {
     setIsAuthenticated(false);
-    localStorage.removeItem('adminAuth');
+    if (typeof window !== 'undefined') {
+      localStorage.removeItem('adminAuth');
+    }
     setPassword('');
   };
 

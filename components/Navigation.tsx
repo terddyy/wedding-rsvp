@@ -13,15 +13,15 @@ const Navigation = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-cream/95 backdrop-blur-sm shadow-soft border-b border-gold-200/30">
       <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl">
         <div className="flex items-center justify-between h-20">
           {/* Logo / Couple Names */}
           <Link
             href="/"
-            className="text-2xl md:text-3xl font-serif font-bold text-primary-600 hover:text-primary-700 transition-colors"
+            className="text-2xl md:text-3xl font-script font-bold text-coral-500 hover:text-gold-500 transition-colors bloom"
           >
-            JHEIFER
+            ✿ JHEIFER
           </Link>
 
           {/* Desktop Navigation */}
@@ -31,11 +31,11 @@ const Navigation = () => {
                 key={link.href}
                 href={link.href}
                 className={`
-                  font-medium transition-colors relative
+                  font-body font-medium transition-all relative bloom
                   ${
                     pathname === link.href
-                      ? 'text-primary-600'
-                      : 'text-gray-700 hover:text-primary-600'
+                      ? 'text-coral-500'
+                      : 'text-charcoal hover:text-coral-500'
                   }
                 `}
               >
@@ -43,7 +43,7 @@ const Navigation = () => {
                 {pathname === link.href && (
                   <motion.div
                     layoutId="activeNav"
-                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary-600"
+                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-coral-400 via-gold-400 to-coral-400 rounded-full"
                     transition={{ type: 'spring', stiffness: 380, damping: 30 }}
                   />
                 )}
@@ -54,7 +54,7 @@ const Navigation = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={toggleMenu}
-            className="md:hidden p-2 text-gray-700 hover:text-primary-600 focus:outline-none focus:ring-2 focus:ring-primary-500 rounded-lg"
+            className="md:hidden p-2 text-charcoal hover:text-coral-500 focus:outline-none focus:ring-2 focus:ring-coral-300 rounded-full bloom"
             aria-label="Toggle menu"
             aria-expanded={isOpen}
           >
@@ -85,7 +85,7 @@ const Navigation = () => {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden bg-white border-t"
+            className="md:hidden bg-cream border-t border-gold-200/30"
           >
             <div className="container mx-auto px-4 py-4 space-y-2">
               {NAV_LINKS.map((link) => (
@@ -94,11 +94,11 @@ const Navigation = () => {
                   href={link.href}
                   onClick={() => setIsOpen(false)}
                   className={`
-                    block px-4 py-3 rounded-lg font-medium transition-colors
+                    block px-4 py-3 rounded-full font-body font-medium transition-all bloom
                     ${
                       pathname === link.href
-                        ? 'bg-primary-50 text-primary-600'
-                        : 'text-gray-700 hover:bg-gray-50'
+                        ? 'bg-coral-50 text-coral-500 shadow-soft'
+                        : 'text-charcoal hover:bg-sage-50 hover:text-sage-600'
                     }
                   `}
                 >

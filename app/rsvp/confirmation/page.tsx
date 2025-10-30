@@ -152,10 +152,10 @@ export default function ConfirmationPage() {
             If you need to update your RSVP or have any questions, please don&apos;t hesitate to reach out.
           </p>
           <a
-            href="mailto:wedding@sarahandmichael.com"
+            href="mailto:terddy03@gmail.com"
             className="text-primary-600 hover:text-primary-700 font-semibold text-lg"
           >
-            wedding@sarahandmichael.com
+            terddy03@gmail.com
           </a>
         </motion.div>
       </PageSection>
