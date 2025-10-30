@@ -21,7 +21,7 @@ const Navigation = () => {
             href="/"
             className="text-2xl md:text-3xl font-serif font-bold text-primary-600 hover:text-primary-700 transition-colors"
           >
-            S & M
+            JHEIFER
           </Link>
 
           {/* Desktop Navigation */}

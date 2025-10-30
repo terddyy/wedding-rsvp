@@ -5,11 +5,11 @@ import Link from 'next/link';
 import Image from 'next/image';
 import PageSection from '@/components/ui/PageSection';
 import Button from '@/components/ui/Button';
+import Countdown from '@/components/Countdown';
 import { WEDDING_DATE, COUPLE_NAMES } from '@/lib/constants';
-import { formatDate, daysUntilWedding } from '@/lib/utils';
+import { formatDate } from '@/lib/utils';
 
 export default function Home() {
-  const daysLeft = daysUntilWedding(WEDDING_DATE);
   const formattedDate = formatDate(WEDDING_DATE);
 
   return (
@@ -19,7 +19,7 @@ export default function Home() {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1519741497674-611481863552?w=1920&h=1080&fit=crop"
+            src="https://picsum.photos/seed/hero/1920/1080"
             alt="Wedding background"
             fill
             className="object-cover"
@@ -60,7 +60,7 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.8 }}
           >
             <p className="mb-2">{formattedDate}</p>
-            <p className="text-primary-200">San Francisco, California</p>
+            <p className="text-primary-200">Kapitan Moy, Marikina City</p>
           </motion.div>
 
           <motion.div
@@ -104,33 +104,29 @@ export default function Home() {
 
       {/* Countdown Section */}
       <PageSection background="white">
-        <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-gray-900">
-            Counting Down
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-            <div className="bg-primary-50 rounded-lg p-8 shadow-md">
-              <div className="text-5xl md:text-6xl font-bold text-primary-600 mb-2">
-                {daysLeft}
-              </div>
-              <div className="text-lg text-gray-700">Days to Go</div>
-            </div>
-            <div className="bg-secondary-50 rounded-lg p-8 shadow-md">
-              <div className="text-5xl md:text-6xl font-bold text-secondary-600 mb-2">
-                {Math.floor(daysLeft * 24)}
-              </div>
-              <div className="text-lg text-gray-700">Hours</div>
-            </div>
-            <div className="bg-accent-50 rounded-lg p-8 shadow-md">
-              <div className="text-5xl md:text-6xl font-bold text-accent-600 mb-2">
-                {Math.floor(daysLeft * 1440)}
-              </div>
-              <div className="text-lg text-gray-700">Minutes</div>
-            </div>
-          </div>
-          <p className="text-xl text-gray-600">
+        <div className="text-center max-w-5xl mx-auto">
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-4xl md:text-5xl font-serif font-bold mb-4 text-gray-900"
+          >
+            Counting Down to Forever
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="text-lg md:text-xl text-gray-600 mb-12"
+          >
             We can&apos;t wait to celebrate with you!
-          </p>
+          </motion.p>
+          
+          <div className="bg-gradient-to-br from-primary-50 via-white to-secondary-50 rounded-2xl p-8 md:p-12 shadow-xl">
+            <Countdown targetDate={new Date(WEDDING_DATE)} />
+          </div>
         </div>
       </PageSection>
 
@@ -167,7 +163,7 @@ export default function Home() {
             className="relative h-96 md:h-[500px] rounded-lg overflow-hidden shadow-xl"
           >
             <Image
-              src="https://images.unsplash.com/photo-1519741497674-611481863552?w=800&h=1000&fit=crop"
+              src="https://picsum.photos/seed/couple/800/1000"
               alt="Sarah and Michael"
               fill
               className="object-cover"
@@ -240,8 +236,8 @@ export default function Home() {
               </svg>
             </div>
             <h3 className="text-2xl font-serif font-bold mb-3 text-gray-900">Where</h3>
-            <p className="text-gray-600">The Grand Estate</p>
-            <p className="text-gray-600 mt-2">San Francisco, CA</p>
+            <p className="text-gray-600">Kapitan Moy Restaurant</p>
+            <p className="text-gray-600 mt-2">Marikina City</p>
             <Link href="/venue" className="inline-block mt-4 text-secondary-600 hover:text-secondary-700 font-medium">
               Get Directions →
             </Link>
