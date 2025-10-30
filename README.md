@@ -1,380 +1,758 @@
-# 💍 Wedding RSVP Website<div align="center"># Wedding RSVP Website
+# 💍 Wedding RSVP Website# 💍 Wedding RSVP Website<div align="center"># Wedding RSVP Website
 
 
 
-<div align="center">  <h1>💍 Wedding RSVP Website</h1>
+<div align="center">
 
 
 
-**A beautiful, secure, and modern wedding website with code-gated RSVP system**  <p>A beautiful, secure, and modern wedding website with code-gated RSVP system</p>A beautiful, code-gated wedding website built with Next.js 15, React 19, Tailwind CSS, and Firebase.
+**A beautiful, secure, and modern wedding website with code-gated RSVP system**<div align="center">  <h1>💍 Wedding RSVP Website</h1>
 
 
 
-[Features](#features) • [Demo](#demo) • [Tech Stack](#tech-stack) • [Getting Started](#getting-started) • [Deployment](#deployment)  
+[Features](#-features) • [Tech Stack](#%EF%B8%8F-tech-stack) • [Getting Started](#-getting-started) • [Admin Dashboard](#-admin-dashboard) • [Deployment](#-deployment)
 
 
 
-![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js)  <p>## Features
+![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js)**A beautiful, secure, and modern wedding website with code-gated RSVP system**  <p>A beautiful, secure, and modern wedding website with code-gated RSVP system</p>A beautiful, code-gated wedding website built with Next.js 15, React 19, Tailwind CSS, and Firebase.
 
 ![React](https://img.shields.io/badge/React-19-blue?style=flat-square&logo=react)
 
-![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat-square&logo=typescript)    <a href="#features">Features</a> •
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat-square&logo=typescript)
 
 ![Firebase](https://img.shields.io/badge/Firebase-10.0-orange?style=flat-square&logo=firebase)
 
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38B2AC?style=flat-square&logo=tailwind-css)    <a href="jheifer.zentariph.com">Demo</a> •- ✨ Elegant, responsive design with smooth animations
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38B2AC?style=flat-square&logo=tailwind-css)[Features](#features) • [Demo](#demo) • [Tech Stack](#tech-stack) • [Getting Started](#getting-started) • [Deployment](#deployment)  
 
 
 
-</div>    <a href="#deployment">Deployment</a>- 📱 Fully mobile-responsive
+</div>
 
 
 
----  </p>- 🔥 Firebase Firestore for data storage
+---![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js)  <p>## Features
 
 
 
-## 📸 Screenshots- ⚡ Server-side rendering with Next.js 15
+## 📸 Screenshots![React](https://img.shields.io/badge/React-19-blue?style=flat-square&logo=react)
 
 
 
-### Hero Section  ![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js)- 🎯 Production-ready with proper SEO
+### Hero Section![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat-square&logo=typescript)    <a href="#features">Features</a> •
 
 ![Wedding Website Hero](image/hero.png)
 
-  ![React](https://img.shields.io/badge/React-19-blue?style=flat-square&logo=react)
+![Firebase](https://img.shields.io/badge/Firebase-10.0-orange?style=flat-square&logo=firebase)
 
 ### Admin Dashboard
 
-![Admin Dashboard](image/admin-dashboard.png)  ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat-square&logo=typescript)## Pages
+![Admin Dashboard](image/admin-dashboard.png)![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38B2AC?style=flat-square&logo=tailwind-css)    <a href="jheifer.zentariph.com">Demo</a> •- ✨ Elegant, responsive design with smooth animations
 
 
 
----  ![Firebase](https://img.shields.io/badge/Firebase-10.0-orange?style=flat-square&logo=firebase)
+---
 
 
 
-## ✨ Features  ![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38B2AC?style=flat-square&logo=tailwind-css)- **Home**: Hero section with countdown timer
+## ✨ Features</div>    <a href="#deployment">Deployment</a>- 📱 Fully mobile-responsive
 
 
 
-### 🎨 **Beautiful Design**- **Our Story**: Timeline of the couple's journey
+### 🎨 Beautiful Design
 
 - Elegant, modern UI with smooth Framer Motion animations
 
-- Fully responsive design (mobile, tablet, desktop)</div>- **Venue**: Location details and maps
+- Fully responsive design (mobile, tablet, desktop)---  </p>- 🔥 Firebase Firestore for data storage
 
 - Clean typography with Google Fonts (Playfair Display, Inter)
 
-- Tailwind CSS for consistent styling- **Itinerary**: Wedding day schedule
+- Tailwind CSS for consistent styling
 
 
 
-### 🔐 **Secure RSVP System**---- **Registry**: Gift registry links
+### 🔐 Secure RSVP System## 📸 Screenshots- ⚡ Server-side rendering with Next.js 15
 
 - Code-gated authentication (one code per guest)
 
-- Bcrypt password hashing for invitation codes- **RSVP**: Secure code-gated RSVP form
+- Bcrypt password hashing for invitation codes
 
 - Server-side validation and Firebase Admin SDK
 
-- Prevents duplicate submissions## 📸 Screenshots
+- Prevents duplicate submissions### Hero Section  ![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js)- 🎯 Production-ready with proper SEO
 
 
 
-### 👥 **Guest Management**## Tech Stack
+### 👥 Guest Management![Wedding Website Hero](image/hero.png)
 
 - Add guests via scripts with unique invitation codes
 
-- Track RSVP status (Attending/Not Attending/Pending)### Hero Section
+- Track RSVP status (Attending/Not Attending/Pending)  ![React](https://img.shields.io/badge/React-19-blue?style=flat-square&logo=react)
 
 - Collect optional messages from guests
 
-- View submission timestamps![Wedding Website Hero](image/hero.png)- **Frontend**: Next.js 15, React 19, TypeScript
+- View submission timestamps### Admin Dashboard
 
 
 
-### 📊 **Admin Dashboard**- **Styling**: Tailwind CSS, Framer Motion
+### 📊 Admin Dashboard![Admin Dashboard](image/admin-dashboard.png)  ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=flat-square&logo=typescript)## Pages
 
 - Real-time statistics (Total, Attending, Not Attending, Pending)
 
-- Searchable guest list with all RSVP details### Admin Dashboard- **Database**: Firebase Firestore
+- Searchable guest list with all RSVP details
 
 - Export data to CSV for planning
 
-- Delete guests functionality![Admin Dashboard](image/admin-dashboard.png)- **Auth**: Custom code-based authentication
+- Delete guests functionality---  ![Firebase](https://img.shields.io/badge/Firebase-10.0-orange?style=flat-square&logo=firebase)
 
 - Password-protected access
 
-- **Hosting**: Vercel (recommended)
 
-### 📱 **Multiple Pages**
 
-- **Home**: Hero section with countdown timer---
+### 📱 Multiple Pages
+
+- **Home**: Hero section with countdown timer## ✨ Features  ![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38B2AC?style=flat-square&logo=tailwind-css)- **Home**: Hero section with countdown timer
 
 - **Our Story**: Timeline of your relationship
 
-- **Venue**: Location details and directions## Getting Started
+- **Venue**: Location details and directions
 
 - **Itinerary**: Wedding day schedule
 
-- **Registry**: Gift registry links## ✨ Features
+- **Registry**: Gift registry links### 🎨 **Beautiful Design**- **Our Story**: Timeline of the couple's journey
 
 - **RSVP**: Secure code-gated RSVP form
 
-- **Admin**: Dashboard for managing guests### Prerequisites
+- **Admin**: Dashboard for managing guests- Elegant, modern UI with smooth Framer Motion animations
 
 
 
----### 🎨 **Beautiful Design**
+---- Fully responsive design (mobile, tablet, desktop)</div>- **Venue**: Location details and maps
 
 
 
-## 🛠️ Tech Stack- Elegant, modern UI with smooth Framer Motion animations- Node.js 18+ 
+## 🛠️ Tech Stack- Clean typography with Google Fonts (Playfair Display, Inter)
 
 
 
-| Category | Technology |- Fully responsive design (mobile, tablet, desktop)- npm or yarn
+| Category | Technology |- Tailwind CSS for consistent styling- **Itinerary**: Wedding day schedule
 
 |----------|------------|
 
-| **Framework** | Next.js 15 (App Router) |- Clean typography with Google Fonts (Playfair Display, Inter)- Firebase project
+| **Framework** | Next.js 15 (App Router) |
 
 | **Frontend** | React 19, TypeScript 5.0 |
 
-| **Styling** | Tailwind CSS 3.4, Framer Motion |- Tailwind CSS for consistent styling- Vercel account (for deployment)
+| **Styling** | Tailwind CSS 3.4, Framer Motion |### 🔐 **Secure RSVP System**---- **Registry**: Gift registry links
 
 | **Database** | Firebase Firestore |
 
-| **Authentication** | Custom code-based system |
+| **Authentication** | Custom code-based system |- Code-gated authentication (one code per guest)
 
 | **Deployment** | Vercel |
 
-| **Password Hashing** | bcryptjs |### 🔐 **Secure RSVP System**### Installation
+| **Password Hashing** | bcryptjs |- Bcrypt password hashing for invitation codes- **RSVP**: Secure code-gated RSVP form
 
 
 
----- Code-gated authentication (one code per guest)
+---- Server-side validation and Firebase Admin SDK
 
 
 
-## 🚀 Getting Started- Bcrypt password hashing for invitation codes1. Clone the repository:
+## 🚀 Getting Started- Prevents duplicate submissions## 📸 Screenshots
 
 
 
-### Prerequisites- Server-side validation and Firebase Admin SDK```bash
+### Prerequisites
 
 
 
-Before you begin, ensure you have:- Prevents duplicate submissionsgit clone <repository-url>
+- Node.js 18+### 👥 **Guest Management**## Tech Stack
 
-- **Node.js 18+** installed
+- npm or yarn
 
-- **npm** or **yarn** package managercd wedding-rsvp
+- Firebase account (free tier works)- Add guests via scripts with unique invitation codes
 
-- **Firebase account** (free tier works)
+- Git
 
-- **Git** for version control### 👥 **Guest Management**```
+- Track RSVP status (Attending/Not Attending/Pending)### Hero Section
 
+### Installation
 
+- Collect optional messages from guests
 
-### Installation- Add guests via scripts with unique invitation codes
+**1. Clone the repository**
 
+```bash- View submission timestamps![Wedding Website Hero](image/hero.png)- **Frontend**: Next.js 15, React 19, TypeScript
 
-
-1. **Clone the repository**- Track RSVP status (Attending/Not Attending/Pending)2. Install dependencies:
-
-```bash
-
-git clone https://github.com/terddyy/wedding-rsvp.git- Collect optional messages from guests```bash
+git clone https://github.com/terddyy/wedding-rsvp.git
 
 cd wedding-rsvp
 
-```- View submission timestampsnpm install
+```
+
+### 📊 **Admin Dashboard**- **Styling**: Tailwind CSS, Framer Motion
+
+**2. Install dependencies**
+
+```bash- Real-time statistics (Total, Attending, Not Attending, Pending)
+
+npm install
+
+```- Searchable guest list with all RSVP details### Admin Dashboard- **Database**: Firebase Firestore
 
 
 
-2. **Install dependencies**```
+**3. Set up environment variables**- Export data to CSV for planning
 
 ```bash
 
-npm install### 📊 **Admin Dashboard**
+cp .env.example .env.local- Delete guests functionality![Admin Dashboard](image/admin-dashboard.png)- **Auth**: Custom code-based authentication
 
 ```
 
-- Real-time statistics (Total, Attending, Not Attending, Pending)3. Create a `.env.local` file based on `.env.example`:
+- Password-protected access
 
-3. **Set up environment variables**
+Edit `.env.local` with your configuration:
 
-```bash- Searchable guest list with all RSVP details```bash
+```env- **Hosting**: Vercel (recommended)
 
-cp .env.example .env.local
+# Firebase Configuration
 
-```- Export data to CSV for planningcp .env.example .env.local
+NEXT_PUBLIC_FIREBASE_API_KEY=your_api_key### 📱 **Multiple Pages**
 
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
 
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id- **Home**: Hero section with countdown timer---
 
-Edit `.env.local` with your configuration:- Delete guests functionality```
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_project.appspot.com
 
-```env
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_sender_id- **Our Story**: Timeline of your relationship
 
-# Firebase Configuration (Client-side)- Password-protected access
+NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
 
-NEXT_PUBLIC_FIREBASE_API_KEY=your_api_key
+- **Venue**: Location details and directions## Getting Started
 
-NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com4. Configure your environment variables in `.env.local`:
+# Firebase Admin SDK
 
-NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
+FIREBASE_ADMIN_PROJECT_ID=your_project_id- **Itinerary**: Wedding day schedule
 
-NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_project.appspot.com### 📱 **Multiple Pages**   - Add your Firebase configuration
+FIREBASE_ADMIN_CLIENT_EMAIL=firebase-adminsdk@your_project.iam.gserviceaccount.com
 
-NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
-
-NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id- **Home**: Hero section with countdown timer   - Add Firebase Admin SDK credentials
-
-
-
-# Firebase Admin SDK (Server-side)- **Our Story**: Timeline of your relationship   - Set your wedding date and couple names
-
-FIREBASE_ADMIN_PROJECT_ID=your_project_id
-
-FIREBASE_ADMIN_CLIENT_EMAIL=firebase-adminsdk@your_project.iam.gserviceaccount.com- **Venue**: Location details and directions
-
-FIREBASE_ADMIN_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\nYOUR_KEY\n-----END PRIVATE KEY-----\n"
-
-- **Itinerary**: Wedding day schedule### Firebase Setup
-
-# Admin Dashboard
-
-ADMIN_PASSWORD=your_secure_password- **Registry**: Gift registry links
+FIREBASE_ADMIN_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\nYOUR_KEY\n-----END PRIVATE KEY-----\n"- **Registry**: Gift registry links## ✨ Features
 
 
 
-# Wedding Details- **RSVP**: Secure code-gated RSVP form1. Create a new Firebase project at [https://console.firebase.google.com](https://console.firebase.google.com)
+# Admin Dashboard- **RSVP**: Secure code-gated RSVP form
+
+ADMIN_PASSWORD=your_secure_password
+
+- **Admin**: Dashboard for managing guests### Prerequisites
+
+# Wedding Details
 
 NEXT_PUBLIC_WEDDING_DATE=2026-06-15
 
-NEXT_PUBLIC_COUPLE_NAMES=Your Names- **Admin**: Dashboard for managing guests
+NEXT_PUBLIC_COUPLE_NAMES=Your Names
+
+```---### 🎨 **Beautiful Design**
+
+
+
+**4. Start development server**
+
+```bash
+
+npm run dev## 🛠️ Tech Stack- Elegant, modern UI with smooth Framer Motion animations- Node.js 18+ 
 
 ```
 
-2. Enable Firestore Database
-
-4. **Start development server**
-
-```bash---
-
-npm run dev
-
-```3. Create a `guests` collection with the following structure:
 
 
+Open [http://localhost:3000](http://localhost:3000) 🎉
 
-Open [http://localhost:3000](http://localhost:3000) 🎉## 🛠️ Tech Stack```javascript
+| Category | Technology |- Fully responsive design (mobile, tablet, desktop)- npm or yarn
 
+---
 
+|----------|------------|
 
----{
+## 🔥 Firebase Setup
 
+| **Framework** | Next.js 15 (App Router) |- Clean typography with Google Fonts (Playfair Display, Inter)- Firebase project
 
+### 1. Create Firebase Project
 
-## 🔥 Firebase Setup| Category | Technology |  id: "auto-generated",
-
-
-
-### 1. Create Firebase Project|----------|------------|  name: "Guest Name",
-
-
-
-1. Go to [Firebase Console](https://console.firebase.google.com)| **Framework** | Next.js 15 (App Router) |  code_hash: "hashed-code",
+1. Go to [Firebase Console](https://console.firebase.google.com)| **Frontend** | React 19, TypeScript 5.0 |
 
 2. Click "Add Project" and follow the wizard
 
-3. Once created, click the **web icon** (`</>`) to register your app| **Frontend** | React 19, TypeScript 5.0 |  rsvp_status: "pending",
+3. Click the web icon (`</>`) to register your app| **Styling** | Tailwind CSS 3.4, Framer Motion |- Tailwind CSS for consistent styling- Vercel account (for deployment)
 
 
 
-### 2. Enable Firestore Database| **Styling** | Tailwind CSS 3.4, Framer Motion |  plus_one: "",
+### 2. Enable Firestore Database| **Database** | Firebase Firestore |
+
+1. Go to **Firestore Database**
+
+2. Click "Create database"| **Authentication** | Custom code-based system |
+
+3. Choose **Production mode**
+
+4. Select your preferred region| **Deployment** | Vercel |
+
+5. Click "Enable"
+
+| **Password Hashing** | bcryptjs |### 🔐 **Secure RSVP System**### Installation
+
+### 3. Set Security Rules
+
+Go to **Firestore → Rules** and add:
 
 
 
-1. In Firebase Console, go to **Firestore Database**| **Database** | Firebase Firestore |  message: "",
-
-2. Click "Create database"
-
-3. Choose **Production mode**| **Authentication** | Custom code-based system |  used: false,
-
-4. Select your preferred region
-
-5. Click "Enable"| **Deployment** | Vercel |  submitted_at: null
-
-
-
-### 3. Set Security Rules| **Password Hashing** | bcryptjs |}
-
-
-
-Go to **Firestore → Rules** and add:```
-
-
-
-```javascript---
+```javascript---- Code-gated authentication (one code per guest)
 
 rules_version = '2';
 
-service cloud.firestore {4. Add Firestore security rules:
+service cloud.firestore {
 
   match /databases/{database}/documents {
 
-    match /guests/{guestId} {## 🚀 Getting Started```javascript
+    match /guests/{guestId} {## 🚀 Getting Started- Bcrypt password hashing for invitation codes1. Clone the repository:
 
-      allow read, write: if false; // Only server-side access via Admin SDK
+      allow read, write: if false;
 
-    }rules_version = '2';
+    }
 
   }
 
-}### Prerequisitesservice cloud.firestore {
+}### Prerequisites- Server-side validation and Firebase Admin SDK```bash
 
 ```
 
-  match /databases/{database}/documents {
+
 
 ### 4. Get Admin SDK Credentials
 
-Before you begin, ensure you have:    match /guests/{guestId} {
+1. Go to **Project Settings → Service Accounts**Before you begin, ensure you have:- Prevents duplicate submissionsgit clone <repository-url>
 
-1. Go to **Project Settings → Service Accounts**
+2. Click **"Generate new private key"**
 
-2. Click **"Generate new private key"**- **Node.js 18+** installed      allow read, write: if false; // Only server-side access
+3. Download the JSON file- **Node.js 18+** installed
 
-3. Download the JSON file
+4. Add credentials to your `.env.local`
 
-4. Add credentials to your `.env.local` file- **npm** or **yarn** package manager    }
+- **npm** or **yarn** package managercd wedding-rsvp
 
+---
 
+- **Firebase account** (free tier works)
 
----- **Firebase account** (free tier works)  }
+## 👥 Adding Guests
 
+- **Git** for version control### 👥 **Guest Management**```
 
-
-## 👥 Adding Guests- **Git** for version control}
-
-
-
-### Method 1: Using the Script (Recommended)```
+### Using the Script (Recommended)
 
 
 
-1. **Edit** `scripts/add-guests.ts`:### Installation
+**1. Edit** `scripts/add-guests.ts`:
 
-
-
-```typescript5. Download your service account key:
+```typescript### Installation- Add guests via scripts with unique invitation codes
 
 const guests = [
 
+  { name: 'Alice Smith', code: 'ALICE2026' },
+
+  { name: 'Bob Johnson', code: 'BOB2026' },
+
+  // Add more guests...1. **Clone the repository**- Track RSVP status (Attending/Not Attending/Pending)2. Install dependencies:
+
+];
+
+``````bash
+
+
+
+**2. Run the script:**git clone https://github.com/terddyy/wedding-rsvp.git- Collect optional messages from guests```bash
+
+```bash
+
+npx tsx scripts/add-guests.tscd wedding-rsvp
+
+```
+
+```- View submission timestampsnpm install
+
+---
+
+
+
+## 📊 Admin Dashboard
+
+2. **Install dependencies**```
+
+### Access
+
+1. Navigate to `/admin````bash
+
+2. Enter your admin password
+
+3. View real-time statistics and guest listnpm install### 📊 **Admin Dashboard**
+
+
+
+### Features```
+
+- **Statistics Cards**: Total, Attending, Not Attending, Pending
+
+- **Guest List**: View all guests with RSVP status- Real-time statistics (Total, Attending, Not Attending, Pending)3. Create a `.env.local` file based on `.env.example`:
+
+- **Export CSV**: Download data for planning
+
+- **Delete Guests**: Remove guests with confirmation3. **Set up environment variables**
+
+- **Refresh**: Get latest data
+
+```bash- Searchable guest list with all RSVP details```bash
+
+---
+
+cp .env.example .env.local
+
+## 🎨 Customization
+
+```- Export data to CSV for planningcp .env.example .env.local
+
+### Update Wedding Details
+
+Edit `lib/constants.ts`:
+
+```typescript
+
+export const WEDDING_DATE = '2026-06-15';Edit `.env.local` with your configuration:- Delete guests functionality```
+
+export const COUPLE_NAMES = 'Sarah & Michael';
+
+export const VENUE = { /* venue details */ };```env
+
+export const ITINERARY = [ /* events */ ];
+
+```# Firebase Configuration (Client-side)- Password-protected access
+
+
+
+### Change ColorsNEXT_PUBLIC_FIREBASE_API_KEY=your_api_key
+
+Edit `tailwind.config.ts`:
+
+```typescriptNEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com4. Configure your environment variables in `.env.local`:
+
+colors: {
+
+  primary: { /* color shades */ },NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_project_id
+
+  secondary: { /* color shades */ }
+
+}NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_project.appspot.com### 📱 **Multiple Pages**   - Add your Firebase configuration
+
+```
+
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+
+### Replace Images
+
+Update image URLs in:NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id- **Home**: Hero section with countdown timer   - Add Firebase Admin SDK credentials
+
+- `app/page.tsx` - Hero section
+
+- `lib/constants.ts` - Story timeline
+
+- `app/venue/page.tsx` - Venue images
+
+# Firebase Admin SDK (Server-side)- **Our Story**: Timeline of your relationship   - Set your wedding date and couple names
+
+---
+
+FIREBASE_ADMIN_PROJECT_ID=your_project_id
+
+## 🚢 Deployment
+
+FIREBASE_ADMIN_CLIENT_EMAIL=firebase-adminsdk@your_project.iam.gserviceaccount.com- **Venue**: Location details and directions
+
+### Deploy to Vercel
+
+FIREBASE_ADMIN_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\nYOUR_KEY\n-----END PRIVATE KEY-----\n"
+
+**1. Push to GitHub**
+
+```bash- **Itinerary**: Wedding day schedule### Firebase Setup
+
+git add .
+
+git commit -m "Ready for deployment"# Admin Dashboard
+
+git push origin main
+
+```ADMIN_PASSWORD=your_secure_password- **Registry**: Gift registry links
+
+
+
+**2. Import to Vercel**
+
+- Go to [vercel.com](https://vercel.com)
+
+- Click "New Project"# Wedding Details- **RSVP**: Secure code-gated RSVP form1. Create a new Firebase project at [https://console.firebase.google.com](https://console.firebase.google.com)
+
+- Import your GitHub repository
+
+NEXT_PUBLIC_WEDDING_DATE=2026-06-15
+
+**3. Add Environment Variables**
+
+- Go to Settings → Environment VariablesNEXT_PUBLIC_COUPLE_NAMES=Your Names- **Admin**: Dashboard for managing guests
+
+- Add all variables from `.env.local`
+
+```
+
+**4. Deploy** 🚀
+
+2. Enable Firestore Database
+
+---
+
+4. **Start development server**
+
+## 📁 Project Structure
+
+```bash---
+
+```
+
+wedding-rsvp/npm run dev
+
+├── app/
+
+│   ├── admin/              # Admin dashboard```3. Create a `guests` collection with the following structure:
+
+│   ├── api/                # API routes
+
+│   ├── rsvp/               # RSVP pages
+
+│   ├── story/              # Story timeline
+
+│   ├── venue/              # Venue detailsOpen [http://localhost:3000](http://localhost:3000) 🎉## 🛠️ Tech Stack```javascript
+
+│   ├── itinerary/          # Schedule
+
+│   ├── registry/           # Gift registries
+
+│   └── page.tsx            # Home page
+
+├── components/---{
+
+│   ├── ui/                 # Reusable components
+
+│   ├── Navigation.tsx
+
+│   └── Footer.tsx
+
+├── lib/## 🔥 Firebase Setup| Category | Technology |  id: "auto-generated",
+
+│   ├── firebase/           # Firebase config
+
+│   ├── constants.ts        # App constants
+
+│   └── utils.ts            # Helper functions
+
+├── scripts/### 1. Create Firebase Project|----------|------------|  name: "Guest Name",
+
+│   └── add-guests.ts       # Guest management
+
+└── types/                  # TypeScript definitions
+
+```
+
+1. Go to [Firebase Console](https://console.firebase.google.com)| **Framework** | Next.js 15 (App Router) |  code_hash: "hashed-code",
+
+---
+
+2. Click "Add Project" and follow the wizard
+
+## 🔒 Security Features
+
+3. Once created, click the **web icon** (`</>`) to register your app| **Frontend** | React 19, TypeScript 5.0 |  rsvp_status: "pending",
+
+- ✅ Bcrypt hashing for invitation codes
+
+- ✅ Server-side validation
+
+- ✅ Firebase Admin SDK for secure operations
+
+- ✅ Firestore security rules### 2. Enable Firestore Database| **Styling** | Tailwind CSS 3.4, Framer Motion |  plus_one: "",
+
+- ✅ Password-protected admin dashboard
+
+- ✅ One-time use codes
+
+
+
+---1. In Firebase Console, go to **Firestore Database**| **Database** | Firebase Firestore |  message: "",
+
+
+
+## 🎯 Workflow2. Click "Create database"
+
+
+
+1. **Setup**: Configure Firebase and environment variables3. Choose **Production mode**| **Authentication** | Custom code-based system |  used: false,
+
+2. **Add Guests**: Run script to add guests with codes
+
+3. **Send Invitations**: Include website URL and codes4. Select your preferred region
+
+4. **Monitor RSVPs**: Check admin dashboard regularly
+
+5. **Wedding Day**: Export final guest list and celebrate! 🎉5. Click "Enable"| **Deployment** | Vercel |  submitted_at: null
+
+
+
+---
+
+
+
+## 💡 Pro Tips### 3. Set Security Rules| **Password Hashing** | bcryptjs |}
+
+
+
+- Export CSV regularly for backups
+
+- Test invitation codes before sending
+
+- Most guests will RSVP on mobile devicesGo to **Firestore → Rules** and add:```
+
+- Use memorable codes (e.g., names + year)
+
+- Track pending guests for follow-ups
+
+
+
+---```javascript---
+
+
+
+## 🐛 Troubleshootingrules_version = '2';
+
+
+
+### Build Errorsservice cloud.firestore {4. Add Firestore security rules:
+
+```bash
+
+rm -rf .next node_modules  match /databases/{database}/documents {
+
+npm install
+
+npm run build    match /guests/{guestId} {## 🚀 Getting Started```javascript
+
+```
+
+      allow read, write: if false; // Only server-side access via Admin SDK
+
+### Firebase Issues
+
+- Verify Firestore rules are correct    }rules_version = '2';
+
+- Check Admin SDK credentials in `.env.local`
+
+- Ensure Firebase billing is enabled  }
+
+
+
+### Admin Dashboard Issues}### Prerequisitesservice cloud.firestore {
+
+- Verify `ADMIN_PASSWORD` is set
+
+- Check browser console for errors```
+
+- Confirm correct password entry
+
+  match /databases/{database}/documents {
+
+---
+
+### 4. Get Admin SDK Credentials
+
+## 📄 License
+
+Before you begin, ensure you have:    match /guests/{guestId} {
+
+MIT License - Free to use for your own wedding!
+
+1. Go to **Project Settings → Service Accounts**
+
+---
+
+2. Click **"Generate new private key"**- **Node.js 18+** installed      allow read, write: if false; // Only server-side access
+
+## 🙏 Acknowledgments
+
+3. Download the JSON file
+
+- **Next.js** - React Framework
+
+- **Firebase** - Backend infrastructure4. Add credentials to your `.env.local` file- **npm** or **yarn** package manager    }
+
+- **Tailwind CSS** - Styling framework
+
+- **Framer Motion** - Animation library
+
+- **Vercel** - Hosting platform
+
+---- **Firebase account** (free tier works)  }
+
+---
+
+
+
+## 💖 Made With Love
+
+## 👥 Adding Guests- **Git** for version control}
+
+Built with modern web technologies for couples who want a beautiful, functional wedding website.
+
+
+
+Perfect for:
+
+- Tech-savvy couples### Method 1: Using the Script (Recommended)```
+
+- DIY wedding websites
+
+- Any wedding size
+
+- Developers learning Next.js
+
+1. **Edit** `scripts/add-guests.ts`:### Installation
+
+---
+
+
+
+<div align="center">
+
+```typescript5. Download your service account key:
+
+⭐ **Star this repo if you found it helpful!**
+
+const guests = [
+
+Made with ♥ for your special day
+
   { name: 'Alice Smith', code: 'ALICE2026' },1. **Clone the repository**   - Go to Project Settings > Service Accounts
+
+</div>
 
   { name: 'Bob Johnson', code: 'BOB2026' },
 
