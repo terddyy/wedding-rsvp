@@ -19,7 +19,7 @@ const Navigation = () => {
           {/* Logo / Couple Names */}
           <Link
             href="/"
-            className="text-2xl md:text-3xl font-serif font-bold text-coral-500 hover:text-gold-500 transition-colors bloom"
+            className="text-2xl md:text-3xl font-serif font-bold text-customGreen hover:text-gold-500 transition-colors bloom"
           >
             JHEIFER
           </Link>

@@ -48,6 +48,7 @@ const config: Config = {
         },
         cream: '#FFF8F2',
         charcoal: '#3B3B3B',
+        customGreen: '#087830',
       },
       fontFamily: {
         heading: ['Playfair Display', 'serif'],

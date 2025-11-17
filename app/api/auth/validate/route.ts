@@ -18,7 +18,7 @@ export async function POST(request: NextRequest) {
 
     // Query Firestore for guest with this code
     const guestsRef = adminDb.collection('guests');
-    const snapshot = await guestsRef.where('used', '==', false).get();
+    const snapshot = await guestsRef.get();
 
     if (snapshot.empty) {
       return NextResponse.json(
@@ -33,6 +33,12 @@ export async function POST(request: NextRequest) {
       const guest = doc.data();
       const isValid = await verifyCode(code, guest.code_hash);
       if (isValid) {
+        if (guest.rsvp_status && guest.rsvp_status !== '') {
+          return NextResponse.json(
+            { error: 'RSVP already submitted for this code' },
+            { status: 401 }
+          );
+        }
         matchedGuest = { id: doc.id, ...guest };
         break;
       }
