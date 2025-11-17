@@ -68,15 +68,6 @@ export default function Home() {
             <span className={`${greatVibes.className} font-script text-coral-400 block mb-2`}>{COUPLE_NAMES}</span>
           </motion.h1>
           
-          <motion.p
-            className="text-2xl md:text-3xl lg:text-4xl mb-8 font-light text-sage-700 font-body"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-          >
-            A blooming day under the summer sun
-          </motion.p>
-          
           <motion.div
             className="text-lg md:text-xl mb-12 text-charcoal/80"
             initial={{ opacity: 0 }}

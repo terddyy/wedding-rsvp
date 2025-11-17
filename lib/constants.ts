@@ -1,7 +1,7 @@
-import { VenueInfo, ItineraryEvent, RegistryItem, StoryMilestone } from '@/types';
+import { VenueInfo, ItineraryEvent, RegistryItem } from '@/types';
 
-export const WEDDING_DATE = process.env.NEXT_PUBLIC_WEDDING_DATE || '2026-06-15';
-export const COUPLE_NAMES = process.env.NEXT_PUBLIC_COUPLE_NAMES || 'Sarah & Michael';
+export const WEDDING_DATE = process.env.NEXT_PUBLIC_WEDDING_DATE!;
+export const COUPLE_NAMES = process.env.NEXT_PUBLIC_COUPLE_NAMES!;
 
 export const VENUE: VenueInfo = {
   name: 'Kapitan Moy Restaurant',
@@ -79,48 +79,8 @@ export const REGISTRY: RegistryItem[] = [
   },
 ];
 
-export const STORY_MILESTONES: StoryMilestone[] = [
-  {
-    date: 'Spring 2019',
-    title: 'First Meeting',
-    description: 'We met at a mutual friend\'s party and instantly connected over our shared love of hiking and terrible puns.',
-    image: 'https://picsum.photos/seed/meeting/800/600',
-  },
-  {
-    date: 'Summer 2019',
-    title: 'First Date',
-    description: 'Our first official date was at a cozy Italian restaurant. We talked for hours and closed down the place.',
-    image: 'https://picsum.photos/seed/firstdate/800/600',
-  },
-  {
-    date: 'Fall 2020',
-    title: 'Moving In Together',
-    description: 'We took the big step and moved into our first apartment together, along with our rescue dog, Charlie.',
-    image: 'https://picsum.photos/seed/home/800/600',
-  },
-  {
-    date: 'Winter 2023',
-    title: 'The Proposal',
-    description: 'On a snowy mountain hike at sunset, Michael got down on one knee. Sarah said yes before he could finish asking!',
-    image: 'https://picsum.photos/seed/proposal/800/600',
-  },
-  {
-    date: 'Summer 2024',
-    title: 'Wedding Planning',
-    description: 'We spent months planning every detail of our special day, with plenty of cake tastings along the way.',
-    image: 'https://picsum.photos/seed/planning/800/600',
-  },
-  {
-    date: 'June 15, 2026',
-    title: 'Our Wedding Day',
-    description: 'The day we\'ve been waiting for - celebrating our love with our closest family and friends!',
-    image: 'https://picsum.photos/seed/wedding/800/600',
-  },
-];
-
 export const NAV_LINKS = [
   { href: '/', label: 'Home' },
-  { href: '/story', label: 'Our Story' },
   { href: '/venue', label: 'Venue' },
   { href: '/itinerary', label: 'Itinerary' },
   { href: '/registry', label: 'Registry' },

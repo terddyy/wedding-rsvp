@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { motion, AnimatePresence } from 'framer-motion';
-import { NAV_LINKS } from '@/lib/constants';
+import { useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { motion, AnimatePresence } from "framer-motion";
+import { NAV_LINKS } from "@/lib/constants";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,9 +19,9 @@ const Navigation = () => {
           {/* Logo / Couple Names */}
           <Link
             href="/"
-            className="text-2xl md:text-3xl font-script font-bold text-coral-500 hover:text-gold-500 transition-colors bloom"
+            className="text-2xl md:text-3xl font-serif font-bold text-coral-500 hover:text-gold-500 transition-colors bloom"
           >
-            ✿ JHEIFER
+            JHEIFER
           </Link>
 
           {/* Desktop Navigation */}
@@ -34,8 +34,8 @@ const Navigation = () => {
                   font-body font-medium transition-all relative bloom
                   ${
                     pathname === link.href
-                      ? 'text-coral-500'
-                      : 'text-charcoal hover:text-coral-500'
+                      ? "text-coral-500"
+                      : "text-charcoal hover:text-coral-500"
                   }
                 `}
               >
@@ -44,7 +44,7 @@ const Navigation = () => {
                   <motion.div
                     layoutId="activeNav"
                     className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gradient-to-r from-coral-400 via-gold-400 to-coral-400 rounded-full"
-                    transition={{ type: 'spring', stiffness: 380, damping: 30 }}
+                    transition={{ type: "spring", stiffness: 380, damping: 30 }}
                   />
                 )}
               </Link>
@@ -82,7 +82,7 @@ const Navigation = () => {
         {isOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
+            animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
             className="md:hidden bg-cream border-t border-gold-200/30"
@@ -97,8 +97,8 @@ const Navigation = () => {
                     block px-4 py-3 rounded-full font-body font-medium transition-all bloom
                     ${
                       pathname === link.href
-                        ? 'bg-coral-50 text-coral-500 shadow-soft'
-                        : 'text-charcoal hover:bg-sage-50 hover:text-sage-600'
+                        ? "bg-coral-50 text-coral-500 shadow-soft"
+                        : "text-charcoal hover:bg-sage-50 hover:text-sage-600"
                     }
                   `}
                 >
