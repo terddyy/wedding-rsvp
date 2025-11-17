@@ -47,7 +47,7 @@ export default function VenuePage() {
             className="relative h-96 lg:h-[500px] rounded-lg overflow-hidden shadow-xl"
           >
             <Image
-              src="https://picsum.photos/seed/venue/800/1000"
+              src="https://d2kihw5e8drjh5.cloudfront.net/eyJidWNrZXQiOiJ1dGEtaW1hZ2VzIiwia2V5IjoicGxhY2VfaW1nLzYwNTRiOTdhZTM3MjQ0ZWQ5OWIzMTdmZmM2ZTY0MDhkIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo2NDAsImhlaWdodCI6NjQwLCJmaXQiOiJpbnNpZGUifSwicm90YXRlIjpudWxsLCJ0b0Zvcm1hdCI6ICJ3ZWJwIn19"
               alt="Venue"
               fill
               className="object-cover"

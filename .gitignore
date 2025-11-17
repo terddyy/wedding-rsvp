@@ -1,9 +1,4 @@
-node_modules/
-.next/
-.env.local
-.env.*.local
-.DS_Store
-dist/# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
 /node_modules
@@ -41,3 +36,6 @@ yarn-error.log*
 next-env.d.ts
 
 /scripts
+
+# Firebase service account (NEVER commit this)
+firebase-service-account.json

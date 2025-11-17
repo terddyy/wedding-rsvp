@@ -7,7 +7,19 @@ export const dynamic = 'force-dynamic';
 
 export async function POST(request: NextRequest) {
   try {
-    const { code } = await request.json();
+    // Safely parse JSON with error handling
+    let body;
+    try {
+      body = await request.json();
+    } catch (parseError) {
+      console.error('JSON parse error:', parseError);
+      return NextResponse.json(
+        { error: 'Invalid request body - must be valid JSON' },
+        { status: 400 }
+      );
+    }
+
+    const { code } = body;
 
     if (!code || typeof code !== 'string') {
       return NextResponse.json(
@@ -16,35 +28,47 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    console.log('Validating code:', code.toUpperCase());
+
     // Query Firestore for guest with this code
     const guestsRef = adminDb.collection('guests');
     const snapshot = await guestsRef.get();
 
     if (snapshot.empty) {
+      console.warn('No guests found in database');
       return NextResponse.json(
         { error: 'Invalid or already used code' },
         { status: 401 }
       );
     }
 
+    console.log(`Checking against ${snapshot.docs.length} guests`);
+
     // Check each guest's hashed code
     let matchedGuest: any = null;
     for (const doc of snapshot.docs) {
       const guest = doc.data();
-      const isValid = await verifyCode(code, guest.code_hash);
-      if (isValid) {
-        if (guest.rsvp_status && guest.rsvp_status !== '') {
-          return NextResponse.json(
-            { error: 'RSVP already submitted for this code' },
-            { status: 401 }
-          );
+      try {
+        const isValid = await verifyCode(code, guest.code_hash);
+        if (isValid) {
+          if (guest.rsvp_status && guest.rsvp_status !== '') {
+            return NextResponse.json(
+              { error: 'RSVP already submitted for this code' },
+              { status: 401 }
+            );
+          }
+          matchedGuest = { id: doc.id, ...guest };
+          console.log('Code validated for guest:', guest.name);
+          break;
         }
-        matchedGuest = { id: doc.id, ...guest };
-        break;
+      } catch (verifyError) {
+        console.error('Error verifying code for guest:', verifyError);
+        continue;
       }
     }
 
     if (!matchedGuest) {
+      console.warn('No matching guest found for code:', code.toUpperCase());
       return NextResponse.json(
         { error: 'Invalid code' },
         { status: 401 }
@@ -69,7 +93,7 @@ export async function POST(request: NextRequest) {
   } catch (error) {
     console.error('Validation error:', error);
     return NextResponse.json(
-      { error: 'Internal server error' },
+      { error: 'Internal server error', details: String(error) },
       { status: 500 }
     );
   }
